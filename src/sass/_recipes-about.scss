@@ -1,0 +1,50 @@
+.recipe-about {
+  background-color: $bg-main;
+  border-radius: 1px 1px 5px 1px;
+  // padding: 2rem 0;
+  text-align: center;
+  .reicpe-image {
+    width: 100%;
+  }
+  .recipe-about__inner {
+    width: 100%;
+    background-color: $light-color;
+    color: $txt-color;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+
+    i {
+      margin-right: 0.75rem;
+    }
+    .title {
+      margin-bottom: 2rem;
+      flex-basis: 100%;
+    }
+    .author {
+      font-size: 50%;
+    }
+    .plus,
+    .minus {
+      margin: 0 0.25rem;
+      border: 1px solid $main-color;
+      cursor: pointer;
+      padding: 1px 6px;
+      border-radius: 100%;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .recipe-bookmark {
+      color: $main-color;
+      cursor: pointer;
+      transform: translateY(-25%);
+      &:hover {
+        transform: scale(1.1) translateY(-25%);
+      }
+    }
+  }
+}

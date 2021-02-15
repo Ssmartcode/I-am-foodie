@@ -1,0 +1,18 @@
+%btn {
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  color: $txt-color;
+  border-radius: 30px;
+  z-index: 100;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.icon {
+  color: $light-color;
+  margin: 0 0.25rem;
+}

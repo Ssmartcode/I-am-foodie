@@ -1,0 +1,51 @@
+header {
+  background-color: $bg-main;
+  grid-column: 1 / span 2;
+  border-radius: 5px 5px 1px 1px;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    width: 150px;
+  }
+  .search-btn {
+    @extend %btn;
+    background-color: $main-color;
+    color: $light-color;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-left: -50px;
+  }
+  .bookmarks {
+    position: relative;
+    padding: 2rem;
+    color: $txt-color;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    .dropdown {
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      color: $txt-color;
+      background-color: $light-color;
+      padding: 1rem;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: visibility 0.3s, opacity 1s;
+    }
+    &:hover {
+      color: $main-color;
+    }
+    &:hover .dropdown {
+      visibility: visible;
+      opacity: 1;
+    }
+    i {
+      color: $main-color;
+    }
+  }
+}
